@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap MultiStep Form</title>
+      <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+
+<div class="container-fluid">
+
+    <!-- MultiStep Form -->
+    <div class="row">
+        <div class="col-md-1 col-md-offset-3"></div>
+        <div class="col-md-10 col-md-offset-3">
+            <form id="msform">
+                <!-- progressbar -->
+                <ul id="progressbar">
+                    <li class="active">Description</li>
+                    <li>Highlights</li>
+                    <li>Plan of Activities</li>
+                    <li>Difficulties</li>
+                    <li>Suggestions</li>
+                </ul>
+                <!-- fieldsets -->
+                <fieldset id="fieldset1">
+                    
+                    <h2 class="fs-title">Brief Description of the work carried out in the present calendar Year</h2>
+                    
+                    <h4 class="text-left"><b>Theory / Laboratory Subjects handled - UG</b></h4>
+                    <div class="new_rowd">
+                        <table id="UG_table" class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Class</th>
+                                    <th>Course Title</th>
+                                    <th>No. of hours/week</th>
+                                    <th>Number of students in class</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" name="UGSubjects1" id="UGSubjecti1_1"></td>
+                                    <td><input type="text" name="UGSubjects2" id="UGSubjecti2_1"></td>
+                                    <td><input type="text" name="UGSubjects3" id="UGSubjecti3_1"></td>
+                                    <td><input type="text" name="UGSubjects4" id="UGSubjecti4_1"></td>
+                                  </tr>
+
+                                </tbody>
+                        </table>
+                    
+                        <input type="button" name="add" id="new_row1" class="action-button" value="Add Row"/>
+                       
+                    </div>   
+                    <h4 class="text-left"><b>Theory / Laboratory Subjects handled - PG</b></h4>
+                    <div class="new_rowd">
+                        <table id="PG_table" class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Class</th>
+                                    <th>Course Title</th>
+                                    <th>No. of hours/week</th>
+                                    <th>Number of students in class</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" name="PGSubjects1" id="PGSubjecti1_1"></td>
+                                    <td><input type="text" name="PGSubjects2" id="PGSubjecti2_1"></td>
+                                    <td><input type="text" name="PGSubjects3" id="PGSubjecti3_1"></td>
+                                    <td><input type="text" name="PGSubjects4" id="PGSubjecti4_1"></td>
+                                  </tr>
+
+                                </tbody>
+                        </table>
+                        
+                        <input type="button" name="add" id="new_row2" class="action-button" value="Add Row"/>
+                    </div>
+
+                    <h4 class="text-left"><b>Titles of M.Tech / M.Sc Theses guided </b></h4>
+                    <div>
+                        <table id="MT_table" class="table">
+                                <thead>             
+                                  <tr>
+                                    <th>Name of the Student</th>
+                                    <th>Title of the Thesis</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" name="MTech1" id="MTech1_1"></td>
+                                    <td><input type="text" name="MTech2" id="MTech2_1"></td>
+                                  </tr>
+
+                                </tbody>
+                        </table>
+                        
+                        <input type="button" name="add" id="new_row3" class="action-button" value="Add Row"/>
+                        
+                     </div>   
+                    <h4 class="text-left"><b>Titles of B.Tech Thesis guided </b></h4>
+                    <div>
+                        <table id="BT_table" class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Name of the Student</th>
+                                    <th>Title of the Thesis</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" name="btechthesis1" id="btechthesis1_1"></td>
+                                    <td><input type="text" name="btechthesis2" id="btechthesis2_1"></td>
+                                  </tr>
+
+                                </tbody>
+                        </table>
+                       
+                         <input type="button" name="add" id="new_row4" class="action-button" value="Add Row"/>
+                    
+                     </div>   
+
+                    <h4 class="text-left"><b>Titles of Ph.D thesis submitted in the current calendar year if any </b></h4>
+                    <div>
+                        <table id="PT_table" class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Name of the Student</th>
+                                    <th>Title of the Thesis</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" name="phdthesis1" id="phdthesis1_1"></td>
+                                    <td><input type="text" name="phdthesis2" id="phdthesis2_1"></td>
+                                  </tr>
+
+                                </tbody>
+                        </table>
+                    
+                         <input type="button" name="add" id="new_row5" class="action-button" value="Add Row"/>
+                    </div>
+
+                    <h4 class="text-left"><b>Titles of Research Projects being carried out in the calendar year if any</b></h4>
+                     <div>   
+                        <table id="P_table" class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Funding Agency</th>
+                                    <th>Value of the Project</th>
+                                    <th>Year of Sanction</th>
+                                    <th>Title of the Project</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" name="research1" id="research1_1"></td>
+                                    <td><input type="text" name="research2" id="research2_1"></td>
+                                    <td><input type="text" name="research3" id="research3_1"></td>
+                                    <td><input type="text" name="research4" id="research4_1"></td>
+                                  </tr>
+
+                                </tbody>
+                        </table>
+                        
+                        <input type="button" name="add" id="new_row6" class="action-button" value="Add Row"/>
+                    </div>
+
+                    <h4 class="text-left"><b>Development of new experiments in the laboratory if any</b></h4>
+                    <div>
+                        <table id="E_table" class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Name of the Laboratory</th>
+                                    <th>Title of the experiment introduced</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" name="experiment1" id="experiment1_1"></td>
+                                    <td><input type="text" name="experiment2" id="experiment2_1"></td>
+                                  </tr>
+
+                                </tbody>
+                        </table>
+                        
+                        <input type="button" name="add" id="new_row7" class="action-button new_row" value="Add Row"/>
+                    </div>    
+
+
+                    <h4 class="text-left"><b>Official Administrative Responsibilities held if any</b></h4>
+                    <div>
+                        <table id="AR_table" class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Responsibility</th>
+                                    <th>From</th>
+                                    <th>To</th>
+                                    <th>Major suggestions for improvement of the system  if any</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" name="OAR1" id="OAR1_1"></td>
+                                    <td><input type="text" name="OAR2_1 " id="OAR2_1"></td>
+                                    <td><input type="text" name="OAR3" id="OAR3_1"></td>
+                                    <td><input type="text" name="OAR4" id="OAR4_1"></td>
+                                  </tr>
+
+                                </tbody>
+                        </table>
+                        
+                        <input type="button" name="add" id="new_row8" class="action-button new_row" value="Add Row"/>
+                        
+                     </div>   
+                    
+                    <h4 class="text-left"><b>Awards received if any</b></h4>
+                    <div>
+                        <table id="A_table" class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Name of the Award</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" name="Award" id="Awardi"></td>
+                                  </tr>
+
+                                </tbody>
+                        </table>
+                    
+                    </div>
+
+                    <h4 class="text-left"><b>Whether Books Taxonomy is followed in Question Paper setting (Copy of Mid and End Sem question papers for the theory subjects taught is to be enclosed)</b></h4>
+                    <input type="text">
+                    
+                    <div id="BT_files" class="form-group">
+                            <input type="file" class="form-control-file">
+                    </div>
+
+                    <div>
+                        <input id="add_new_file_row" type="button" name="add" class="action-button" value="Add File"/>
+                    </div>
+
+                    
+                    
+                    <input type="button" name="next" class="next next-action-button" value="N E X T"/>
+                    
+                </fieldset>
+
+                <fieldset id="fieldset2">
+                    <h2 class="fs-title">Highlights of the work carried out / achievements in the current calendar year</h2>
+                    
+                    <h4 class="text-left"><b>Brief description  of contribution / participation in Institute level activities</b></h4>
+                    <div>
+                    <table id="AR_table" class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" name="table" id="a_table"></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                        
+                     </div>   
+                    
+                
+                    <h4 class="text-left"><b>Brief description  of contribution / participation in Department level activities</b></h4>
+                    <div>
+                    <table id="AR_table" class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" id="A1_table" name="table"></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                     </div>  
+
+                    <h4 class="text-left"><b>Involvement in purchase of any major Equipment(>2Lakhs)</b></h4>
+                    <div>
+                    <table id="AR_table" class="table">
+                            <thead>
+                              <tr>
+                                <th>Name of the Equipment</th>
+                                <th>Cost</th>
+                                <th>Role played in purchase</th>
+                                <th>Status of the purchase</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><input type="text" name="Equipment1" id="Equipment1_1"></td>
+                                <td><input type="text" name="Equipment2" id="Equipment2_1"></td>
+                                <td><input type="text" name="Equipment3" id="Equipment3_1"></td>
+                                <td><input type="text" name="Equipment4" id="Equipment4_1"></td>
+                              </tr>
+
+                            </tbody>
+                    </table>
+                    
+                    
+                        <input type="button"  id="new_row10" name="add" class="new_row action-button" value="Add Row"/>
+                    </div>
+                   
+
+                    <h4 class="text-left"><b>Workshops/Seminars/Conferences organised as coordinator or co-cordinator</b></h4>
+                    <div class="new_rowd">
+                    <table id="AR_table" class="table">
+                            <thead>
+                              <tr>
+                                <th>Title of the workshop</th>
+                                <th>Dates</th>
+                                <th>Number of External Participants</th>
+                                <th>Number of Internal Participants</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><input type="text" name="WSC1" id="WSC1_1"></td>
+                                <td><input type="text" name="WSC2" id="WSC2_1"></td>
+                                <td><input type="text" name="WSC3" id="WSC3_1"></td>
+                                <td><input type="text" name="WSC4" id="WSC4_1"></td>
+                              </tr>
+
+                            </tbody>
+                    </table>
+                    
+                    
+                        <input type="button" id="new_row11" name="add" class="new_row action-button" value="Add Row"/>
+                    </div>
+                    
+                    
+                    <h4 class="text-left"><b>Any specific initiatives taken for improvement of teaching- learning process  (Usage of flipped class room/ blended learning/ any ICT tools to enhance self learning component of the student)</b></h4>
+                    <div>
+                    <table class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" name="table3" id="ATABLE"></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                     </div>  
+
+                    <h4 class="text-left"><b>Details of publications in Journals (published in the current  academic year)</b></h4>
+                    <div class="new_rowd">
+                    <table id="AR_table" class="table">
+                            <thead>
+                              <tr>
+                                <th>Title of the Paper</th>
+                                <th>Name of the Journal</th>
+                                <th>Vol. No. Year</th>
+                                <th>Co Authors if any</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><input type="text" name="Details1" id="Details1_1"></td>
+                                <td><input type="text" name="Details2" id="Details2_1"></td>
+                                <td><input type="text" name="Details3" id="Details3_1"></td>
+                                <td><input type="text" name="Details4" id="Details4_1"></td>
+                              </tr>
+
+                            </tbody>
+                    </table>
+                    
+                    
+                        <input id="new_row12" type="button" name="add" class="new_row action-button" value="Add Row"/>
+                    </div>
+                    
+                    
+                    <h4 class="text-left"><b>Details of publications in International and National Conferences (pubished in current AY)</b></h4>
+                    <div>
+                    <table class="table">
+                            <thead>
+                              <tr>
+                                <th>Title of the Paper</th>
+                                <th>Name of the Conference</th>
+                                <th>Place and Dtaes of Conference</th>
+                                <th>Co Authors if any</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><input type="text" name="details1" id="details1_1"></td>
+                                <td><input type="text" name="details2" id="details2_1"></td>
+                                <td><input type="text" name="details3" id="details3_1"></td>
+                                <td><input type="text" name="details4" id="details4_1"></td>
+                              </tr>
+
+                            </tbody>
+                    </table>
+                    
+                    
+                        <input id="new_row13" type="button" name="add" class="action-button new_row" value="Add Row"/>
+                    </div>
+                    
+
+                    <h4 class="text-left"><b>Any specific measures taken to improve the academic feed back given by the students in the last academic year</b></h4>
+                    <div class="new_rowd">
+                    <table id="AR_table" class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" id="ATABLE1" name="table_1"></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                        
+                        </div>  
+                    <h4 class="text-left"><b>Consultancy work carried out if any</b></h4>
+                    <div class="new_rowd">
+                    <table id="AR_table" class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" id="ATABLE2" name="table_2"></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                        
+                        
+                     </div>  
+
+                    <h4 class="text-left"><b>Status of Ph.D s guiding in the current academic  year</b></h4>
+                    <div class="new_rowd">
+                    <table id="AR_table" class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" id="ATABLE3" name="table_3"></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                        
+                     </div>  
+                    <h4 class="text-left"><b>Contributions to the development of Learning materials like text books/ e-books/ Lab manuals</b></h4>
+                    <div class="new_rowd">
+                    <table id="AR_table" class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" id="ATABLE4" name="table_4"></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                        
+                    
+                     </div>  
+                    <h4 class="text-left"><b>Any self development activities ( Attending any professional development  programs or continuing education programs)</b></h4>
+                  <div class="new_rowd">
+                    <table id="AR_table" class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" id="ATABLE5" name="table_5"></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                        
+                        
+                     </div>  
+                    <h4 class="text-left"><b>Membership of Professional societies if any</b></h4>
+                    <div class="new_rowd">
+                    <table id="AR_table" class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" id="ATABLE6" name="table_6"></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                        
+                        
+                     </div>  
+                    <h4 class="text-left"><b>Participation in Out Reach Activities</b></h4>
+                    <div class="new_rowd">
+                        <table id="AR_table" class="table">
+                            <thead>
+                              <tr>
+                                <th>Type of activity</th>
+                                <th>Name of the institue/University</th>
+                                <th>Dates of the Activity</th>
+                                <th>Funding From the institute Yes/No</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><input type="text" name="activities1" id="activities1_1"></td>
+                                <td><input type="text" name="activities2" id="activities2_1"></td>
+                                <td><input type="text" name="activities3" id="activities3_1"></td>
+                                <td><input type="text" name="activities4" id="activities4_1"></td>
+                              </tr>
+
+                            </tbody>
+                    </table>
+                    
+                 
+                        <input type="button" id="new_row14" name="add" class="new_row action-button" value="Add Row"/>
+                
+                    </div>
+                    <h4 class="text-left"><b>Status of Cumulative Professional Development Fund used in the current year</b></h4>
+                    <div class="new_rowd">
+                        <table id="AR_table" class="table new_table">
+                                <thead>
+                                  <tr>
+                                    <th>Total Amount used</th>
+                                    <th>Conference Regn Fee</th>
+                                    <th>Travel</th>
+                                    <th>Membership of Professional Societies</th>
+                                    <th>Other Expenditure</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" name="development1" id="development1_1"></td>
+                                    <td><input type="text" name="development2" id="development2_1"></td>
+                                    <td><input type="text" name="development3" id="development3_1"></td>
+                                    <td><input type="text" name="development4" id="development4_1"></td>
+                                    <td><input type="text" name="development5" id="development5_1"></td>
+                                  </tr>
+
+                                </tbody>
+                        </table>
+                    
+                    
+                        <input id="new_row15" type="button" name="add" class="action-button new_row" value="Add Row"/>
+                        
+
+                    </div>                       
+                    <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                    <input type="button" name="next" class="next next-action-button" value="N E X T"/>
+                
+                </fieldset>
+                <fieldset id="fieldset3">
+                    <h2 class="fs-title">Briefly describe the plan of activities for the next academic year in the order of priority :</h2>
+                   
+                  <div class="new_rowd">
+                    <table id="AR_table" class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" id="ATABLE7" name="table_7"></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                        
+                     </div>    
+                    <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                    <input type="button" name="next" class="next next-action-button" value="N E X T"/>
+                </fieldset>
+
+                <fieldset>
+                    <h2 class="fs-title">Any difficulties you experienced while discharging your duties</h2>
+                   
+                  <div class="new_rowd">
+                    <table id="AR_table" class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" id="ATABLE8" name="table_8"></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                        
+                     </div>    
+                    <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                    <input type="button" name="next" class="next next-action-button" value="N E X T"/>
+                </fieldset>
+
+                <fieldset>
+                    <h2 class="fs-title">Any suggestions for improvement of the system within the constraints of governance</h2>
+                   
+                <div class="new_rowd">
+                    <table id="AR_table" class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><input type="text" id="ATABLE9" name="table_9"></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                   </div>      
+                    <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                    <input type="button" name="next" class="next next-action-button new_rowdisp" value="N E X T"/>
+                </fieldset>   
+                <fieldset>
+                 <h5 style="font-size: 80px, margin-bottom: 10px"><b>Final View:</b></h5>
+                 
+
+
+
+
+
+                    
+                 <h4 class="text-left"><b>Theory / Laboratory Subjects handled - UG</b></h4>
+                      <div>       
+                                <table id="UG_table_disp" class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Class</th>
+                                    <th>Course Title</th>
+                                    <th>No. of hours/week</th>
+                                    <th>Number of students in class</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="new_rowdisp">
+                                    <td><p name="UGdisplays_disp_1" id="UGdisplayi1_1"></p></td>
+                                    <td><p name="UGdisplays_disp_2" id="UGdisplayi2_1"></p></td>
+                                    <td><p name="UGdisplays_disp_3" id="UGdisplayi3_1"></p></td>
+                                    <td><p name="UGdisplays_disp_4" id="UGdisplayi4_1"></p></td>
+                                  </tr>
+
+                                </tbody>
+                         </table>
+                     </div> 
+
+
+                     <h4 class="text-left"><b>Theory / Laboratory Subjects handled - PG</b></h4>
+                         <div>
+                        <table id="PG_table_disp" class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Class</th>
+                                    <th>Course Title</th>
+                                    <th>No. of hours/week</th>
+                                    <th>Number of students in class</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="new_rowdisp">
+                                    <td><p name="PGdisplays_disp_1" id="PGdisplayi1_1"></p></td>
+                                    <td><p name="PGdisplays_disp_2" id="PGdisplayi2_1"></p></td>
+                                    <td><p name="PGdisplays_disp_3" id="PGdisplayi3_1"></p></td>
+                                    <td><p name="PGdisplays_disp_4" id="PGdisplayi4_1"></p></td>
+                                  </tr>
+                              </tbody>
+                        </table>
+                         </div>
+                         <h4 class="text-left"><b>Titles of M.Tech / M.Sc Theses guided </b></h4>
+                    <div>
+                        <table id="MT_table_disp" class="table">
+                                <thead>             
+                                  <tr>
+                                    <th>Name of the Student</th>
+                                    <th>Title of the Thesis</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><p name="MTdisplays_1" id="MTdisplays1_1"></p></td>
+                                    <td><p name="MTdisplays_2" id="MTdisplays2_1"></p></td>
+                                  </tr>
+
+                                </tbody>
+                        </table>
+                        
+                   </div>
+                    <h4 class="text-left"><b>Titles of B.Tech Thesis guided </b></h4>
+                    <div>
+                        <table id="BT_table_disp" class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Name of the Student</th>
+                                    <th>Title of the Thesis</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><p name="btechthesis1" id="btechthe_disp1_1"></p></td>
+                                    <td><p name="btechthesis2" id="btechthe_disp2_1"></p></td>
+                                  </tr>
+
+                                </tbody>
+                        </table>
+
+                    </div>
+                    <h4 class="text-left"><b>Titles of Ph.D thesis submitted in the current calendar year if any </b></h4>
+                    <div>
+                        <table id="PT_table_disp" class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Name of the Student</th>
+                                    <th>Title of the Thesis</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><p name="phdthesis1" id="phdthe_disp1_1"></p></td>
+                                    <td><p name="phdthesis2" id="phdthe_disp2_1"></p></td>
+                                  </tr>
+
+                                </tbody>
+                        </table>
+                    </div>
+                     <h4 class="text-left"><b>Titles of Research Projects being carried out in the calendar year if any</b></h4>
+                     <div>   
+                        <table id="P_table_disp" class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Funding Agency</th>
+                                    <th>Value of the Project</th>
+                                    <th>Year of Sanction</th>
+                                    <th>Title of the Project</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><p name="research1" id="research_disp1_1"></p></td>
+                                    <td><p name="research2" id="research_disp2_1"></p></td>
+                                    <td><p name="research3" id="research_disp3_1"></p></td>
+                                    <td><p name="research4" id="research_disp4_1"></p></td>
+                                  </tr>
+
+                                </tbody>
+                        </table>
+                   </div>
+                         
+                    <h4 class="text-left"><b>Development of new experiments in the laboratory if any</b></h4>
+                    <div>
+                        <table id="E_table_disp" class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Name of the Laboratory</th>
+                                    <th>Title of the experiment introduced</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><p name="experiment1" id="experiment_disp1_1"></p></td>
+                                    <td><p name="experiment2" id="experiment_disp2_1"></p></td>
+                                  </tr>
+
+                                </tbody>
+                        </table>
+                        
+                          </div>        
+
+                    <h4 class="text-left"><b>Official Administrative Responsibilities held if any</b></h4>
+                    <div>
+                        <table id="AR_table_disp" class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Responsibility</th>
+                                    <th>From</th>
+                                    <th>To</th>
+                                    <th>Major suggestions for improvement of the system  if any</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><p name="OAR1" id="OAR_disp1_1"></p></td>
+                                    <td><p name="OAR2" id="OAR_disp2_1"></p></td>
+                                    <td><p name="OAR3" id="OAR_disp3_1"></p></td>
+                                    <td><p name="OAR4" id="OAR_disp4_1"></p></td>
+                                  </tr>
+
+                                </tbody>
+                        </table>
+                     </div>   
+
+
+                    <h4 class="text-left"><b>Awards received if any</b></h4>
+                    <div>
+                        <table id="A_table_disp" class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Name of the Award</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><p name="Award" id="Award_disp"></p></td>
+                                  </tr>
+
+                                </tbody>
+                        </table>
+                     </div>
+
+                     <h4 class="text-left"><b>Brief description  of contribution / participation in Institute level activities</b></h4>
+                    <div>
+                    <table id="AR_table" class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><p name="table" id="a_table_dispi"></p></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                      </div>     
+
+
+                    <h4 class="text-left"><b>Brief description  of contribution / participation in Department level activities</b></h4>
+                    <div>
+                    <table id="AR_table" class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><P id="A1_table_disp" name="table"></P></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                        
+                     </div>  
+
+
+                    <h4 class="text-left"><b>Involvement in purchase of any major Equipment(>2Lakhs)</b></h4>
+                    <div>
+                    <table id="AR_table_disp2" class="table">
+                            <thead>
+                              <tr>
+                                <th>Name of the Equipment</th>
+                                <th>Cost</th>
+                                <th>Role played in purchase</th>
+                                <th>Status of the purchase</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><p name="Equipment1" id="Equipment_disp1_1"></p></td>
+                                <td><p name="Equipment2" id="Equipment_disp2_1"></p></td>
+                                <td><p name="Equipment3" id="Equipment_disp3_1"></p></td>
+                                <td><p name="Equipment4" id="Equipment_disp4_1"></p></td>
+                              </tr>
+
+                            </tbody>
+                    </table>
+                   
+               </div>
+
+                    <h4 class="text-left"><b>Workshops/Seminars/Conferences organised as coordinator or co-cordinator</b></h4>
+                    <div class="new_rowd">
+                    <table id="AR_table_disp3" class="table">
+                            <thead>
+                              <tr>
+                                <th>Title of the workshop</th>
+                                <th>Dates</th>
+                                <th>Number of External Participants</th>
+                                <th>Number of Internal Participants</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><p name="WSC1" id="WSC_disp1_1"></p></td>
+                                <td><p name="WSC2" id="WSC_disp2_1"></p></td>
+                                <td><p name="WSC3" id="WSC_disp3_1"></p></td>
+                                <td><p name="WSC4" id="WSC_disp4_1"></p></td>
+                              </tr>
+
+                            </tbody>
+                    </table>
+                    </div>
+           <h4 class="text-left"><b>Any specific initiatives taken for improvement of teaching- learning process  (Usage of flipped class room/ blended learning/ any ICT tools to enhance self learning component of the student)</b></h4>
+                    <div>
+                    <table class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><p name="table3" id="ATABLE_disp"></p></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                      </div>  
+                       <h4 class="text-left"><b>Details of publications in Journals (published in the current  academic year)</b></h4>
+                    <div>
+                    <table id="AR_table_disp4" class="table">
+                            <thead>
+                              <tr>
+                                <th>Title of the Paper</th>
+                                <th>Name of the Journal</th>
+                                <th>Vol. No. Year</th>
+                                <th>Co Authors if any</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><p name="Details1" id="Details_disp1_1"></p></td>
+                                <td><p name="Details2" id="Details_disp2_1"></p></td>
+                                <td><p name="Details3" id="Details_disp3_1"></p></td>
+                                <td><p name="Details4" id="Details_disp4_1"></p></td>
+                              </tr>
+                               </tbody>
+                    </table>
+                    
+                    </div>   
+
+
+                    <h4 class="text-left"><b>Details of publications in International and National Conferences (pubished in current AY)</b></h4>
+                    <div>
+                    <table id="AR_table_disp5" class="table">
+                            <thead>
+                              <tr>
+                                <th>Title of the Paper</th>
+                                <th>Name of the Conference</th>
+                                <th>Place and Dtaes of Conference</th>
+                                <th>Co Authors if any</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><p name="details1" id="details_disp1_1"></p></td>
+                                <td><p name="details2" id="details_disp2_1"></p></td>
+                                <td><p name="details3" id="details_disp3_1"></p></td>
+                                <td><p name="details4" id="details_disp4_1"></p></td>
+                              </tr>
+
+                            </tbody>
+                    </table>
+                    </div>
+                    
+                       <h4 class="text-left"><b>Any specific measures taken to improve the academic feed back given by the students in the last academic year</b></h4>
+                    <div class="new_rowd">
+                    <table id="AR_table" class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><p id="ATABLE1_disp" name="table_1"></p></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                        
+                        </div>  
+                    <h4 class="text-left"><b>Consultancy work carried out if any</b></h4>
+                    <div class="new_rowd">
+                    <table id="AR_table" class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><p id="ATABLE2_disp" name="table_2"></p></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                        
+                        
+                     </div>  
+
+                    <h4 class="text-left"><b>Status of Ph.D s guiding in the current academic  year</b></h4>
+                    <div class="new_rowd">
+                    <table id="AR_table" class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><p id="ATABLE3_disp" name="table_3"></p></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                        
+                     </div>  
+                    <h4 class="text-left"><b>Contributions to the development of Learning materials like text books/ e-books/ Lab manuals</b></h4>
+                    <div class="new_rowd">
+                    <table id="AR_table" class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><p id="ATABLE4_disp" name="table_4"></p></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                        
+                    
+                     </div>  
+                    <h4 class="text-left"><b>Any self development activities ( Attending any professional development  programs or continuing education programs)</b></h4>
+                  <div class="new_rowd">
+                    <table id="AR_table" class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><p id="ATABLE5_disp" name="table_5"></p></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                        
+                        
+                     </div>  
+                    <h4 class="text-left"><b>Membership of Professional societies if any</b></h4>
+                    <div class="new_rowd">
+                    <table id="AR_table" class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><p id="ATABLE6_disp" name="table_6"></p></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                    </div>
+
+              <h4 class="text-left"><b>Participation in Out Reach Activities</b></h4>
+                    <div class="new_rowd">
+                        <table id="AR_table_disp6" class="table">
+                            <thead>
+                              <tr>
+                                <th>Type of activity</th>
+                                <th>Name of the institue/University</th>
+                                <th>Dates of the Activity</th>
+                                <th>Funding From the institute Yes/No</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><p name="activities1" id="activities_disp1_1"></p></td>
+                                <td><p name="activities2" id="activities_disp2_1"></p></td>
+                                <td><p name="activities3" id="activities_disp3_1"></p></td>
+                                <td><p name="activities4" id="activities_disp4_1"></p></td>
+                              </tr>
+
+                            </tbody>
+                    </table>
+               </div>
+               
+                 <h4 class="text-left"><b>Status of Cumulative Professional Development Fund used in the current year</b></h4>
+                    <div class="new_rowd">
+                        <table id="AR_table_disp7" class="table new_table">
+                                <thead>
+                                  <tr>
+                                    <th>Total Amount used</th>
+                                    <th>Conference Regn Fee</th>
+                                    <th>Travel</th>
+                                    <th>Membership of Professional Societies</th>
+                                    <th>Other Expenditure</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><p name="development1" id="development_disp1_1"></p></td>
+                                    <td><P name="development2" id="development_disp2_1"></P></td>
+                                    <td><p name="development3" id="development_disp3_1"></p></td>
+                                    <td><p name="development4" id="development_disp4_1"></p></td>
+                                    <td><p name="development5" id="development_disp5_1"></p></td>
+                                  </tr>
+
+                                </tbody>
+                        </table>
+                    
+                    
+                          <h2 class="fs-title">Briefly describe the plan of activities for the next academic year in the order of priority :</h2>
+                   
+                            <div>
+                            <table id="AR_table" class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><p id="ATABLE7_disp" name="table_7"></p></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                        
+                     </div>   
+
+                    <h2 class="fs-title">Any difficulties you experienced while discharging your duties</h2>
+                   
+                  <div class="new_rowd">
+                    <table id="AR_table" class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><p id="ATABLE8_disp" name="table_8"></p></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                        
+                     </div>  
+
+                    <h2 class="fs-title">Any suggestions for improvement of the system within the constraints of governance</h2>
+                   
+                <div class="new_rowd">
+                    <table id="AR_table" class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><p id="ATABLE9_disp" name="table_9"></p></td>
+                                  </tr>
+                                </tbody>
+                        </table>
+                   </div>      
+                    <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                    <input type="submit" name="submit" class="action-button" value="submit"/>  
+                </fieldset> 
+            </form>
+
+        </div>
+        <div class="col-md-1 col-md-offset-3"></div>
+    </div>
+
+<!-- /.MultiStep Form -->
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+
+  
+
+    <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
